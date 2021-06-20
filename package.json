@@ -1,0 +1,23 @@
+{
+  "name": "loading-indicators",
+  "version": "1.0.0",
+  "description": "This is a Repo which contains a simple structure to test Web APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-toscani/loading-indicators.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-toscani/loading-indicators/issues"
+  },
+  "homepage": "https://github.com/j-toscani/loading-indicators#readme",
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  }
+}
