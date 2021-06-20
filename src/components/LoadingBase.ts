@@ -6,8 +6,9 @@ export default class LoadingBase extends HTMLElement {
   }
   constructor() {
     super();
-    const templateId = this.dataset.templateId ?? "loading-template";
-    let template = document.getElementById(templateId) as HTMLTemplateElement;
+    let template = document.querySelector(
+      "#loading-template"
+    ) as HTMLTemplateElement;
 
     this.classList.add("loading-container");
 
