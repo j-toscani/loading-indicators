@@ -1,0 +1,48 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(0.75);
+  }
+  80% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.pulsing-balls {
+  --li-height: 60px;
+}
+
+.pulsing-balls {
+  --side-length: calc(var(--li-height) / 3);
+  display: flex;
+  position: relative;
+
+  height: var(--li-height);
+  width: var(--li-width);
+
+  overflow: hidden;
+}
+
+.pulsing-balls .ball {
+  transform: scale(0.75);
+  height: var(--side-length);
+  width: var(--side-length);
+
+  border-radius: 50%;
+  background-color: var(--li-ball-bg, teal);
+  margin: var(--side-length) calc(var(--side-length) / 2);
+  animation: pulse var(--duration, 1.2s) ease-in-out var(--delay, 0s) infinite
+    alternate forwards;
+}
+
+.ball.second {
+  --delay: 0.4s;
+}
+.ball.third {
+  --delay: 0.8s;
+}
