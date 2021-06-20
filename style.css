@@ -28,3 +28,13 @@ header {
 footer {
   background: lightgray;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), minmax(0, 1fr));
+  grid-template-rows: repeat(auto-fill, 200px);
+
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
