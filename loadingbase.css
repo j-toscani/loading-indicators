@@ -1,0 +1,23 @@
+.loading-container {
+  display: grid;
+  padding: 0.25em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.loading-container > * {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.2s ease-out;
+}
+
+.loading-container > .visible {
+  opacity: 1;
+  transition: opacity 0.2s 0.2s ease-out;
+}
